@@ -24,3 +24,4 @@ console.log(typeof undefined); // undefined returns undefined
 
 // in my opinion null returning an object is necessary because how would we no if there was nothing or was it undefined or it was empty . Well , it's just my opinion.
 
+
