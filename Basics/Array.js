@@ -63,3 +63,25 @@ console.log(arr4)
 //start: The index to begin changes.
 //deleteCount (optional): The number of elements to remove.
 //...items (optional): Elements to insert.
+
+
+// also there is diff between concat and push
+
+const items1 = ["pencil", "book" , "eraser"]
+const items2 = ["apple" , "orange" , "pineapple"]
+
+console.log(items1.concat(items2)) // ["pencil", "book", "eraser", "apple", "orange", "pineapple"]
+
+items1.push(items2)
+
+console.log(items1); // ["pencil", "book", "eraser", ["apple", "orange", "pineapple"]]
+
+
+const arr5 = Array.from({name : "danial"})
+
+console.log(arr5); // [] returns empty array asked in interviews
+
+const nestedArray = [1, 2, [3, 4], [5, [6, [ 7]]]]
+const simpleArray = nestedArray.flat(3) // infinity if you want to do it for all depths
+
+console.log(simpleArray); // [1, 2, 3, 4, 5, 6, 7]
